@@ -1,0 +1,89 @@
+#number 1
+def sor(x):
+    print(sorted(x))
+
+#number 2
+def sum(x):
+    sum = 0
+    for i in x:
+        sum =+ i
+    print(sum)
+
+#number 3
+def product(x):
+    product  = 0
+    for i in x:
+        product = product * i
+    print(product)
+
+
+#number 4
+def mean(x):
+    sum = 0
+    for i in x:
+        sum =+ i
+    print(sum/len(x))
+
+#number 5
+def mode(x):
+    count = {}
+    for i in x:
+        if not i in count.keys():
+            count[i] = 0
+        else:
+            count[i] += 1
+    print(max(count, key=count.get))
+
+
+#number 6
+def largest(x):
+    print(max(x))
+
+
+#number 7
+def smallest(x):
+    min(x)
+
+
+#number 8
+def rm_dups(x):
+    print(set(x))
+
+#number 9
+def rm_even(x):
+    lis = []
+    for i in x:
+        if i%2 == 0:
+            list.index(i)
+    print(list)
+
+#number 10
+def rm_odds(x):
+    lis = []
+    for i in x:
+        if i%2 == 1:
+            list.index(i)
+    print(list)
+
+
+#number 11
+def ask_u(x):
+    num = int(input("Enter a number"))
+    if num in x:
+        print("Number is in the list")
+    else:
+        print("Number is not in the list")
+
+if __name__ == '__main__':
+    x = [int(input("Enter a number")) for i in range(5)]
+    sor(x)
+    sum(x)
+    product(x)
+    mean(x)
+    mode(x)
+    largest(x)
+    smallest(x)
+    rm_dups(x)
+    rm_even(x)
+    rm_odds(x)
+    ask_u(x)
